@@ -1,11 +1,27 @@
 <!DOCTYPE html>
+<!--Search Bar-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer Search Listing</title>
+    <style>
+        .center-block {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+
+</form>
 </head>
 <body>
-    
+    <form action = "apply.html">
+        <label class = "center-block" for = "keyword">Position, Keyword, or Organizaiton:</label>
+        <input class = "center-block" type = "search" id = "keyword" name="keyword">
+        <label class = "center-block" for ="location">City, State, Zip Code, or Remote</label>
+        <input class = "center-block"="text" id="location" name="location"><br><br>
+        <input class = "center-block" type="submit" value="search">
+    </form>
 </body>
 </html>
