@@ -8,20 +8,52 @@
     <style>
         .center-block {
             display: block;
-            margin-right: auto;
-            margin-left: auto;
+            margin: 0 auto;
+        }
+        /* New styles to center two inputs on the same line */
+        .search-row {
+            display: flex;
+            gap: 1rem;
+            justify-content: center; /* center the row horizontally */
+            align-items: center;     /* align labels/inputs vertically */
+            flex-wrap: wrap;        /* allow wrapping on very small screens */
+            margin: 1rem 0;
+        }
+        .search-field {
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            min-width: 200px; /* reasonable minimum width for each field */
+        }
+        .search-field label {
+            margin-bottom: 0.25rem;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+        .search-field input[type="search"] {
+            padding: 0.4rem 0.5rem;
+            font-size: 1rem;
         }
     </style>
-
-</form>
 </head>
 <body>
-    <form action = "apply.html">
-        <label class = "center-block" for = "keyword">Position, Keyword, or Organizaiton:</label>
-        <input class = "center-block" type = "search" id = "keyword" name="keyword">
-        <label class = "center-block" for ="location">City, State, Zip Code, or Remote</label>
-        <input class = "center-block"="text" id="location" name="location"><br><br>
-        <input class = "center-block" type="submit" value="search">
-    </form>
+    <div class="center-block">
+        <form action="apply.html" method="get" class="search-form" role="search" aria-label="Volunteer search form">
+            <div class="search-row">
+                <div class="search-field">
+                    <label for="keyword"></label>
+                    <input type="search" id="keyword" name="keyword" placeholder="Position, Keyword, or Organization">
+                </div>
+                <div class="search-field">
+                    <label for="location"></label>
+                    <input type="search" id="location" name="location" placeholder="City, State, Zip Code, or Remote">
+                </div>
+                <div style="align-self:center;">
+                    <input type="submit" value="Search">
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
