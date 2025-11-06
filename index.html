@@ -1,17 +1,17 @@
 <!-- sign in page -->
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Sign Up</title>
- </head>
- <body>
-      <div id="Signup">
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/styles.css">
+      <title>Sign Up</title>
+   </head>
+   <body>
+      <div id="sign-up">
+         <img src="assets\images\Logo.png" class="logo-img">
          <h1>Sign Up</h1>
-
-         <form id="signup-form" action="pages/quiz.html">
+         <form id="signup-form">
             <label for="username">Enter Username</label>
             <input type="text" id="username" name="username" required><br><br>
 
@@ -23,11 +23,18 @@
 
             <label for="re-enter password">Re-Enter Password</label>
             <input type="text" id="re-enter password" name="re-enter password" required><br><br>
-
-            <input type="submit" value="Submit">
+            <div id="sign-up-buttons">
+               <button type="button" id="volunteer-button" class="button selected">
+                  Volunteer
+               </button>
+               <button type="button" id="organizer-button" class="button">
+                  Organizer
+               </button>
+            </div>
+            <input type="submit" value="Submit" class="button submit-button">
          </form>
       <div>
-   </div>
- </body>
- </html>
+      <script src="js/signup.js"></script>
+   </body>
+</html>
  

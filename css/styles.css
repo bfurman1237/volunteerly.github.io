@@ -3,4 +3,60 @@
     --darkBlue: #007b94;
     --lightBlue: #d0ffff;
     --whiteBlue: #f3ffff;
+    --lightHoverBlue: #00a9cc;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--whiteBlue);
+}
+
+.selected {
+    background-color: var(--darkBlue) !important;
+    color: white !important;
+    transform: scale(1.05);
+    box-shadow: 0px 1px 2px 1px #181717a1;
+}
+
+.logo-img{
+    height: 70px;
+}
+
+.button{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--lightBlue);
+    color: black;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--lightHoverBlue);
+}
+
+.submit-button{
+    display: block;         
+    margin: 20px auto 0;  
+}
+
+#sign-up{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--whiteBlue);
+}
+
+#sign-up-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
 }
