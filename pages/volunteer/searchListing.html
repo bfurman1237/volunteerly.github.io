@@ -6,25 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer Search Listing</title>
     <style>
-        .center-block {
+        /* New styles to center two inputs on the same line */
+        .center-block{
             display: block;
+            width: 100vw;
             margin: 0 auto;
         }
-        /* New styles to center two inputs on the same line */
         .search-row {
             display: flex;
             gap: 1rem;
-            justify-content: center; /* center the row horizontally */
-            align-items: center;     /* align labels/inputs vertically */
-            flex-wrap: wrap;        /* allow wrapping on very small screens */
+            width: calc(100% - 1.5rem);
+            justify-content: center;
+            align-items: center; 
             margin: 1rem 0;
         }
         .search-field {
-            width: 500px;
+            width: 50%;
             display: flex;
             flex-direction: column;
             align-items: stretch;
-            min-width: 200px; /* reasonable minimum width for each field */
+            min-width: 200px; 
         }
         .search-field label {
             margin-bottom: 0.25rem;
@@ -32,7 +33,7 @@
             text-align: left;
         }
         .search-field input[type="search"] {
-            padding: 0.4rem 0.5rem;
+            padding: 0.4rem 0px 0.4rem 0.5rem;
             font-size: 1rem;
         }
     </style>
