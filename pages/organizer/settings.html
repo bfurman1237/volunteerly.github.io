@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organizer User Settings</title>
+
 </head>
 <body>
-    
+    <div id="createListing">
+        <h1> Create new listing</h1>
+        <form>
+
+            <label for="username">Username: Company XYZ </label><br>
+            <input type="text" id="username" name="username"><br>
+
+            <label for="password">Change password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="requirments">Give a requirements of the listing:</label><br>
+            <input type="text" id="requirments" name="requirments"><br><br>
+
+            <label for="time">Give the time and date of the listing:</label><br>
+            <input type="text" id="time" name="time"><br><br>
+            <input type="button" value="Sign Out" id = "sign-out-button">
+            <input type="submit" value="Update">
+        </form> 
+     </div>
+     <script src = "../../js/settings.js"></script>
 </body>
 </html>
