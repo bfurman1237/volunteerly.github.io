@@ -5,27 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer Search Listing</title>
+    <link rel="stylesheet" href="../../css/styles.css">
     <style>
         /* New styles to center two inputs on the same line */
-        .center-block{
-            display: block;
-            width: 100vw;
-            margin: 0 auto;
-        }
         .search-row {
             display: flex;
             gap: 1rem;
-            width: calc(100% - 1.5rem);
-            justify-content: center;
-            align-items: center; 
+            justify-content: center; /* center the row horizontally */
+            align-items: center;     /* align labels/inputs vertically */
+            flex-wrap: wrap;        /* allow wrapping on very small screens */
             margin: 1rem 0;
+            margin-top: 100px; /* shifts the margin down */
         }
         .search-field {
-            width: 50%;
+            width: 400px;
             display: flex;
             flex-direction: column;
             align-items: stretch;
-            min-width: 200px; 
+            min-width: 200px; /* reasonable minimum width for each field */
         }
         .search-field label {
             margin-bottom: 0.25rem;
@@ -33,13 +30,18 @@
             text-align: left;
         }
         .search-field input[type="search"] {
-            padding: 0.4rem 0px 0.4rem 0.5rem;
+            padding: 0.4rem 0.5rem;
             font-size: 1rem;
         }
     </style>
 </head>
 <body>
-    <div class="center-block">
+    <button onclick="location.href='settings.html'">
+        Go to Another Page
+    </button>
+    <img src = "../../assets/images/Logo.png" class="logo-img">
+
+    <div id="search-line">
         <form action="apply.html" method="get" class="search-form" role="search" aria-label="Volunteer search form">
             <div class="search-row">
                 <div class="search-field">
