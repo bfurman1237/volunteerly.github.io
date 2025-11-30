@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="../../css/styles.css">
     <style>
         /* New styles to center two inputs on the same line */
+        .settings {
+            display: flex;
+            flex-direction: column;
+            align-items: right; /* not working; should put settings button on right side*/
+        }
         .search-row {
             display: flex;
             gap: 1rem;
@@ -41,10 +46,13 @@
     </style>
 </head>
 <body> <!-- Slide 16 -->
-    <button onclick="location.href='settings.html'">  <!-- Should be at top right-->
-        Settings
-    </button>
-    <img src = "../../assets/images/Logo.png" class="logo-img">
+    <div>
+        <button onclick="location.href='settings.html'" class = "settings" >  <!-- Should be at top right-->
+            Settings
+        </button>
+        <br>
+        <img src = "../../assets/images/Logo.svg" class="logo-img">
+    </div>
 
     <div id="search-line">
         <form action="searchListing.html" method="get" class="search-form" role="search" aria-label="Volunteer search form">
