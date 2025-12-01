@@ -5,27 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer Search Listing</title>
+    <link rel="stylesheet" href="../../css/styles.css">
     <style>
         /* New styles to center two inputs on the same line */
-        .center-block{
-            display: block;
-            width: 100vw;
-            margin: 0 auto;
+        .settings {
+            display: flex;
+            flex-direction: column;
+            align-items: right; /* not working; should put settings button on right side*/
         }
         .search-row {
             display: flex;
             gap: 1rem;
-            width: calc(100% - 1.5rem);
-            justify-content: center;
-            align-items: center; 
+            justify-content: center; /* center the row horizontally */
+            align-items: center;     /* align labels/inputs vertically */
+            flex-wrap: wrap;        /* allow wrapping on very small screens */
             margin: 1rem 0;
+            margin-top: 100px; /* shifts the margin down */
         }
         .search-field {
-            width: 50%;
+            width: 400px;
             display: flex;
             flex-direction: column;
             align-items: stretch;
-            min-width: 200px; 
+            min-width: 200px; /* reasonable minimum width for each field */
         }
         .search-field label {
             margin-bottom: 0.25rem;
@@ -33,14 +35,27 @@
             text-align: left;
         }
         .search-field input[type="search"] {
-            padding: 0.4rem 0px 0.4rem 0.5rem;
+            padding: 0.4rem 0.5rem;
             font-size: 1rem;
+        }
+        .listing-border{
+            border-style: solid;
+            border: 2px #007b94;
+            border-radius: 10px;
         }
     </style>
 </head>
-<body>
-    <div class="center-block">
-        <form action="apply.html" method="get" class="search-form" role="search" aria-label="Volunteer search form">
+<body> <!-- Slide 16 -->
+    <div>
+        <button onclick="location.href='settings.html'" class = "settings" >  <!-- Should be at top right-->
+            Settings
+        </button>
+        <br>
+        <img src = "../../assets/images/Logo.svg" class="logo-img">
+    </div>
+
+    <div id="search-line">
+        <form action="searchListing.html" method="get" class="search-form" role="search" aria-label="Volunteer search form">
             <div class="search-row">
                 <div class="search-field">
                     <label for="keyword"></label>
@@ -55,6 +70,24 @@
                 </div>
             </div>
         </form>
+    </div>
+    <div id = "listings">
+        <div class = "listing-border">
+            <h2><a href = "apply.html">Listing</a></h2>
+            <p>placeholder text haha this is so much pain</p>
+        </div>
+        <div class = "listing-border">
+            <h2>Story Teller</h2>
+            <p>Quenjo Municipal Library</p>
+            <p>Quenjo, NP 14412</p>
+            <p>We want someone who's good with kids and public speaking. The job requires you to read books to young children 5 and under at the library.</p>
+        </div>
+        <div class="listing-border">
+            <h2 class="listing-border">Elderly Companion</h2>
+            <p>Sugaro Elderly Home</p>
+            <p>Cintoatte, QE 33121</p>
+            <p>We need someone who loves being around the elderly. Your job is to be a friend to our residents and offer them your support.</p>
+        </div>
     </div>
 </body>
 </html>
