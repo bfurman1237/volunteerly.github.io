@@ -11,7 +11,9 @@
         .settings {
             display: flex;
             flex-direction: column;
-            align-items: right; /* not working; should put settings button on right side*/
+            position: absolute; 
+            top: 10px;
+            right: 20px;
         }
         .search-row {
             display: flex;
@@ -38,10 +40,16 @@
             padding: 0.4rem 0.5rem;
             font-size: 1rem;
         }
-        .listing-border{
+        .listing{
             border-style: solid;
             border: 2px #007b94;
             border-radius: 10px;
+            margin-left: 40px;
+        }
+        .image-align {
+            position: absolute;
+            top: 20px;
+            left: 50%;
         }
     </style>
 </head>
@@ -51,7 +59,7 @@
             Settings
         </button>
         <br>
-        <img src = "../../assets/images/Logo.svg" class="logo-img">
+        <img src = "../../assets/images/Logo.svg" class="logo-img" class = "image-align">
     </div>
 
     <div id="search-line">
@@ -72,18 +80,18 @@
         </form>
     </div>
     <div id = "listings">
-        <div class = "listing-border">
+        <div class = "listing">
             <h2><a href = "apply.html">Listing</a></h2>
             <p>placeholder text haha this is so much pain</p>
         </div>
-        <div class = "listing-border">
+        <div class = "listing">
             <h2>Story Teller</h2>
             <p>Quenjo Municipal Library</p>
             <p>Quenjo, NP 14412</p>
             <p>We want someone who's good with kids and public speaking. The job requires you to read books to young children 5 and under at the library.</p>
         </div>
-        <div class="listing-border">
-            <h2 class="listing-border">Elderly Companion</h2>
+        <div class="listing">
+            <h2>Elderly Companion</h2>
             <p>Sugaro Elderly Home</p>
             <p>Cintoatte, QE 33121</p>
             <p>We need someone who loves being around the elderly. Your job is to be a friend to our residents and offer them your support.</p>
