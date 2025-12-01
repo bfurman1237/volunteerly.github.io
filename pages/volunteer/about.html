@@ -37,6 +37,62 @@
             margin-left: 40px;
             max-width: 500px; 
         }
+        .right-side {
+            display: flex;
+            align-items: right;
+            margin-right: 20px;
+        }
+        .resume {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 20%;
+            top: 30%;
+            width: 500px;
+            min-width: 100px;
+            align-items: stretch;
+            font-size: 30px;
+        }
+        .upload {
+            display: flex;
+            position: absolute;
+            right: 20%;
+            top: 35%;
+            font-size: 25px;
+        }
+        .listing {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 20%;
+            top: 45%;
+            width: 500px;
+            min-width: 100px;
+            align-items: stretch;
+            font-size: 30px;
+        }
+        .settings {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 20%;
+            top: 55%;
+            width: 500px;
+            min-width: 100px;
+            align-items: stretch;
+            font-size: 30px;
+        }
+        .home {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 20%;
+            top: 65%;
+            width: 500px;
+            min-width: 100px;
+            align-items: stretch;
+            font-size: 30px;
+        }
     </style>
 </head>
 <body>
@@ -49,7 +105,36 @@
             3 years experience in elderly care. 2 years experience in animal care. 1 year experience in inventory management.
         </div>
         <div class = "contact">
-            Email: aubrenheimp03@omarmail.com<br>Phone: +1(312)531-0834
+            Email: aubrenheimp03@omail.com<br>Phone: +1(312)531-0834
+        </div>
+    </div>
+    <div id = "right-side">
+        <div class = "resume">
+            <button onclick="location.href='../../assets/others/Generic Resume.pdf'">
+                Resume
+            </button> 
+        </div>
+        <div class = "upload">
+            Upload Resume
+            <form action="about.html">
+                <input type="file" name="filename">
+                <input type="submit">
+            </form>
+        </div>
+        <div class = "listing">
+            <button onclick="location.href='searchListing.html'">
+                Listings
+            </button> 
+        </div>
+        <div class = "settings">
+            <button onclick="location.href='settings.html'">
+                Settings
+            </button> 
+        </div>
+        <div class = "home">
+            <button onclick="location.href='../../index.html'">
+                Sign Out
+            </button> 
         </div>
     </div>
 </body>
