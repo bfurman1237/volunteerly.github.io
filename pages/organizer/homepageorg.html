@@ -1,30 +1,48 @@
+<!-- pages/organizer/homepageorg.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Volunteerly</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <title>Organizer Home</title>
+    <style>
+        .welcome { margin: 20px 0; font-size: 1.25rem; }
+        .nav-row { display:flex; gap: 10px; margin-bottom: 1rem; }
+        .card { border-radius: 8px; padding: 12px; margin-bottom: 10px; }
+    </style>
 </head>
-<body style = "font-family: Arial; margin: 0">
-    <h1>Volunteerly</h1>
+<body>
+    <header style="display:flex; align-items:center; gap:20px; padding:10px 20px;">
+        <img src="../../assets/images/Logo.png" class="logo-img" alt="Logo">
+        <div style="flex:1">
+            <div data-username style="font-weight:600"></div>
+            <div class="welcome">Organizer dashboard — manage listings & applicants</div>
+        </div>
+        <nav>
+            <a class="button" href="../organizer/settings.html">Settings</a>
+            <a class="button" href="../organizer/createListing.html">Create Listing</a>
+            <a class="button" href="../organizer/about.html">About</a>
+        </nav>
+    </header>
 
-<nav>
-    <a href="settings.html">Settings</a>
-    <a href="createListing.html">Create Listing</a>
-    <a href="about.html">About</a>
-</nav>
-<br>
+    <main style="padding:20px; max-width:900px; margin:0 auto;">
+        <h2>Recent Applicants</h2>
 
-    <div style="height: 200px; border: 1px black; display: flex; align-items: center; justidy-content: center;">
-    
-    </div>
+        <div class="card listing-border">
+            <h3>Penelope Aubrenheim</h3>
+            <p>Applied to Elderly Companion — 3 yrs experience</p>
+            <button class="button" onclick="location.href='applicantProfile.html'">View profile</button>
+            <button class="button">Message</button>
+        </div>
 
-    <h2>New Listings</h2>
+        <div class="card listing-border">
+            <h3>Olivia Ramos</h3>
+            <p>Applied to Story Teller — loves children & books</p>
+            <button class="button" onclick="location.href='applicantProfile.html'">View profile</button>
+        </div>
+    </main>
 
-    <div style ="display: flex; gap: 10px;">
-        <div style="padding: 10px; border: 1px solid black;">Listing 1</div>
-        <div style="padding: 10px; border: 1px solid black;">Listing 2</div>
-        <div style="padding: 10px; border: 1px solid black;">Listing 3</div>
-    </div>
-
+<script src="../../js/settings.js"></script>
 </body>
 </html>

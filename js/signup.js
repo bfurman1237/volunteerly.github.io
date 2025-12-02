@@ -15,8 +15,13 @@ organizerBtn.addEventListener("click", () => {
     volunteerBtn.classList.remove("selected");
 });
 
-document.getElementById("signup-form").addEventListener("submit", (event) => {
+const form = document.getElementById("sign-form");
+document.getElementById("sign-form").addEventListener("submit", (event) => {
     event.preventDefault();
+
+    const username = form.querySelector("#username")?.value?.trim() || "User";
+    const user = { username, role: selectedRole };
+    localStorage.setItem("user", JSON.stringify(user));
 
     if (selectedRole === "volunteer") {
         window.location.href = "pages/volunteer/volunteerQuiz.html";
