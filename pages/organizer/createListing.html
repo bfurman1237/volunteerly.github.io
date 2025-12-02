@@ -2,35 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organizer Create Volunteer Listing</title>
+    <title>Create Listing | Volunteerly</title>
+    <link rel="stylesheet" href="../../css/styles.css">
 </head>
 <body>
-    
-     <div id="createListing">
-        <h1> Create new listing</h1>
-        <form>
+    <a href="/pages/organizer/homepageorg.html" class="button" 
+   style="position:absolute; left:20px; top:20px;">← Back to Home</a>
 
-            <label for="listingName">Name of listing:</label><br>
-            <input type="text" id="listingName" name="listingName"><br>
+    <div id="sign-up">
 
-            <label for="description">Give a description of the listing:</label><br>
-            <input type="text" id="description" name="description"><br><br>
+        <img src="/assets/images/logo.png" class="logo-img" />
 
+        <h1>Create Volunteer Listing</h1>
 
-            <label for="requirments">Give a requirements of the listing:</label><br>
-            <input type="text" id="requirments" name="requirments"><br><br>
+        <form id="quiz-form" style="width: 380px; margin-top: 20px;">
 
-            <label for="time">Give the time and date of the listing:</label><br>
-            <input type="text" id="time" name="time"><br><br>
+            <div>
+                <label>Opportunity Title</label>
+                <input type="text" placeholder="e.g., Park Cleanup Project">
+            </div>
 
-            <input type="submit" value="Post">
-        </form> 
-     </div>
-     
-    
-    
+            <div>
+                <label>Description</label>
+                <textarea placeholder="Describe the opportunity..."
+                    style="height: 120px;"></textarea>
+            </div>
 
-    
+            <div>
+                <label>Location</label>
+                <input type="text" placeholder="City, State">
+            </div>
+
+            <div>
+                <label>Required Skills (optional)</label>
+                <input type="text" placeholder="e.g., First Aid, Teaching, etc.">
+            </div>
+
+            <div>
+                <label>Hours Needed</label>
+                <input type="number" placeholder="Total monthly hours needed">
+            </div>
+
+            <button class="button submit-button">Publish Listing</button>
+
+        </form>
+    </div>
+
 </body>
 </html>

@@ -2,28 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organizer User Settings</title>
-
+    <title>Organizer Settings | Volunteerly</title>
+    <link rel="stylesheet" href="../../css/styles.css">
 </head>
 <body>
-    <div id="SettingsOrginazers">
-        <h1> Settings</h1>
-        <form>
+    <a href="/pages/organizer/homepageorg.html" class="button" 
+   style="position:absolute; left:20px; top:20px;">← Back to Home</a>
 
-            <label for="username">Username: Company XYZ </label><br>
-            <label for="username">Change Username </label><br>
+    <div id="sign-up">
 
-            <input type="text" id="username" name="username"><br>
+        <img src="/assets/images/logo.png" class="logo-img" />
 
-            <label for="password">Change password:</label><br>
-            <input type="password" id="password" name="password"><br><br>
+        <h1>Account Settings</h1>
 
+        <div id="quiz-form" style="margin-top: 20px; width: 350px;">
             
-            <input type="button" value="Sign Out" id = "sign-out-button">
-            <input type="submit" value="Update">
-        </form> 
-     </div>
-     <script src = "../../js/settings.js"></script>
+            <div>
+                <label>Organization Name</label>
+                <input type="text" placeholder="Enter organization name">
+            </div>
+
+            <div>
+                <label>Email</label>
+                <input type="email" placeholder="your-email@domain.com">
+            </div>
+
+            <div>
+                <label>Password</label>
+                <input type="password" placeholder="********">
+            </div>
+
+            <div>
+                <label>Location</label>
+                <input type="text" placeholder="City, State">
+            </div>
+
+            <button class="button submit-button">Save Changes</button>
+
+        </div>
+
+    </div>
+
 </body>
 </html>
