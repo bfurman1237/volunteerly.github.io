@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
     <title>Sign up quiz</title>
 </head>
 <body>
     <div id="quiz-container">
-        <h1>Welcome to the Volunteer Sign Up Quiz!</h1>
+        <img src="../../assets/images/Logo.png" class="logo-img">
+        <h1 id="title">Volunteer Sign Up Quiz!</h1>
         <form id="quiz-form">
-            <label for="question1">Tell us some hobbies</label><br>
-            <input type="text" id="question1" name="question1" required><br><br>
-
-            <label for="question2">How many hours are you looking to volunteer a month roughly?</label><br>
-            <input type="number" id="question2" name="question2" required><br><br>
-
-            <label for="question3">Are you an introvert or extrovert </label><br>
-            <input type="text" id="question3" name="question3" required><br><br>
-
-            <input type="submit" value="Submit">
+            <div>
+                <label for="question1">Tell us some hobbies</label><br>
+                <textarea name="" id="" placeholder="what do you do for fun?..."></textarea>
+            </div>
+            <div>
+                <label for="question2">monlthy volunteer hours:</label><br>
+                <input type="number" id="question2" name="question2" required><br><br>
+            </div>
+            <div class="button-group">
+                <label for="question3">Are you an introvert or extrovert </label><br>
+                <input type="radio" id="option1" name="choice" value="value1" checked>
+                <label for="option1" class="button-label">Introvert</label>
+                <input type="radio" id="option2" name="choice" value="value2">
+                <label for="option2" class="button-label">Extrovert</label>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
         </form>
+    </div>
+    <script src="../../js/quiz.js"></script>
 </body>
+
 </html>
